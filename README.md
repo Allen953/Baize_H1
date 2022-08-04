@@ -8,4 +8,6 @@
 
 ![实地测试例程](https://github.com/Allen953/Baize_HexapodRobot_ROS/blob/main/7.Photos%20%26%20Videos/Baize_HexapodRobot_ROS.gif)
 
+里面有ROS下的机器人正逆学解例程，如下图。
 
+![正逆学解]()
