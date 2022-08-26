@@ -1,0 +1,2135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="LIUZU">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00165220319791242 4.21915156433396E-05 0.00463653964446332"
+        rpy="0 0 0" />
+      <mass
+        value="0.540566917820496" />
+      <inertia
+        ixx="0.000172274623269092"
+        ixy="-2.9261724455527E-08"
+        ixz="-1.66565833689069E-07"
+        iyy="0.00052491603837483"
+        iyz="1.79272280011025E-08"
+        izz="0.00061384097546685" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="RB_DATUI_LINK">
+    <inertial>
+      <origin
+        xyz="0.0255249899968422 0.000763425816777144 0.000986100417396454"
+        rpy="0 0 0" />
+      <mass
+        value="0.0217926611984533" />
+      <inertia
+        ixx="6.59142495049403E-06"
+        ixy="-6.61071268162921E-07"
+        ixz="6.61072459574503E-07"
+        iyy="5.12390522073495E-06"
+        iyz="-5.58337493521547E-13"
+        izz="5.12738472145757E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RB_DATUI_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RB_DATUI_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RB_DATUI_JOINT"
+    type="revolute">
+    <origin
+      xyz="-0.11037 -0.058365 0.0091"
+      rpy="0 0 -2.3562" />
+    <parent
+      link="base_link" />
+    <child
+      link="RB_DATUI_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RB_XI_LINK">
+    <inertial>
+      <origin
+        xyz="0.0195079618947733 -0.00386391652748604 -0.00172748662309145"
+        rpy="0 0 0" />
+      <mass
+        value="0.0522182293168731" />
+      <inertia
+        ixx="1.06499982418723E-05"
+        ixy="1.10358494836357E-06"
+        ixz="-6.71225057808067E-07"
+        iyy="1.62947340584525E-05"
+        iyz="-1.70949741532194E-07"
+        izz="1.11616096936092E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RB_XI_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RB_XI_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RB_XI_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.051 -0.0001 0"
+      rpy="-1.5708 -0.4479 0" />
+    <parent
+      link="RB_DATUI_LINK" />
+    <child
+      link="RB_XI_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RB_XIAOTUI_LINK">
+    <inertial>
+      <origin
+        xyz="0.0289753122034032 -0.0111829923893765 -0.00192095339841086"
+        rpy="0 0 0" />
+      <mass
+        value="0.0620612948573943" />
+      <inertia
+        ixx="1.23823906917626E-05"
+        ixy="9.54958966354607E-07"
+        ixz="3.87138637521844E-08"
+        iyy="1.69766635539357E-05"
+        iyz="-4.48742032954963E-08"
+        izz="1.63610022361651E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RB_XIAOTUI_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RB_XIAOTUI_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RB_XIAOTUI_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.064612 0 0.000127"
+      rpy="0 0 2.0281" />
+    <parent
+      link="RB_XI_LINK" />
+    <child
+      link="RB_XIAOTUI_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RB_R_LINK">
+    <inertial>
+      <origin
+        xyz="0.187481570764567 0.134878400307551 0.0873987406896935"
+        rpy="0 0 0" />
+      <mass
+        value="1.35700200010975" />
+      <inertia
+        ixx="0.018634872344161"
+        ixy="-4.77868890209303E-05"
+        ixz="7.15309895805766E-06"
+        iyy="0.019396702045632"
+        iyz="9.99491939890377E-07"
+        izz="0.0366527677642495" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RB_R_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RB_R_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RB_R_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.11462 0 0"
+      rpy="-1.5708 -0.7854 1.5613" />
+    <parent
+      link="RB_XIAOTUI_LINK" />
+    <child
+      link="RB_R_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RB_P_LINK">
+    <inertial>
+      <origin
+        xyz="0.187481570764567 0.0873987406896937 -0.134878400307551"
+        rpy="0 0 0" />
+      <mass
+        value="1.35700200010975" />
+      <inertia
+        ixx="0.018634872344161"
+        ixy="7.15309895805757E-06"
+        ixz="4.77868890209307E-05"
+        iyy="0.0366527677642495"
+        iyz="-9.99491939872062E-07"
+        izz="0.019396702045632" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RB_P_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RB_P_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RB_P_JOINT"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="RB_R_LINK" />
+    <child
+      link="RB_P_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RB_Y_LINK">
+    <inertial>
+      <origin
+        xyz="0.134878400307551 0.0873987406896936 0.187481570764567"
+        rpy="0 0 0" />
+      <mass
+        value="1.35700200010975" />
+      <inertia
+        ixx="0.019396702045632"
+        ixy="9.9949193988299E-07"
+        ixz="-4.77868890209314E-05"
+        iyy="0.0366527677642495"
+        iyz="7.15309895805885E-06"
+        izz="0.018634872344161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RB_Y_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RB_Y_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RB_Y_JOINT"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 1.5708 0" />
+    <parent
+      link="RB_P_LINK" />
+    <child
+      link="RB_Y_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RM_DATUI_LINK">
+    <inertial>
+      <origin
+        xyz="0.0255249916730214 0.000763424761748375 0.000986100479276303"
+        rpy="0 0 0" />
+      <mass
+        value="0.021792663307571" />
+      <inertia
+        ixx="6.59142493016508E-06"
+        ixy="-6.61071273394348E-07"
+        ixz="6.61072453568919E-07"
+        iyy="5.12390522201195E-06"
+        iyz="-5.53037152747024E-13"
+        izz="5.12738469820539E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RM_DATUI_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RM_DATUI_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RM_DATUI_JOINT"
+    type="revolute">
+    <origin
+      xyz="0 -0.0907 0.0091"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="RM_DATUI_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RM_XI_LINK">
+    <inertial>
+      <origin
+        xyz="0.0195079633298751 -0.00386391587940103 -0.00172748486360854"
+        rpy="0 0 0" />
+      <mass
+        value="0.0522182251911247" />
+      <inertia
+        ixx="1.06499978375078E-05"
+        ixy="1.10358460698087E-06"
+        ixz="-6.71224758181598E-07"
+        iyy="1.62947328581888E-05"
+        iyz="-1.709477599972E-07"
+        izz="1.11616086966235E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RM_XI_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RM_XI_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RM_XI_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.051 -0.0001 0"
+      rpy="-1.5708 -0.4479 0" />
+    <parent
+      link="RM_DATUI_LINK" />
+    <child
+      link="RM_XI_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RM_XIAOTUI_LINK">
+    <inertial>
+      <origin
+        xyz="0.0289753091271252 -0.0111829928382984 -0.00192095355098056"
+        rpy="0 0 0" />
+      <mass
+        value="0.0620612828221141" />
+      <inertia
+        ixx="1.23823899391946E-05"
+        ixy="9.54958336168956E-07"
+        ixz="3.87140428789621E-08"
+        iyy="1.697666312823E-05"
+        iyz="-4.48744848665209E-08"
+        izz="1.63610010795271E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RM_XIAOTUI_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RM_XIAOTUI_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RM_XIAOTUI_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.064612 0 0.000127"
+      rpy="0 0 2.0281" />
+    <parent
+      link="RM_XI_LINK" />
+    <child
+      link="RM_XIAOTUI_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RM_R_LINK">
+    <inertial>
+      <origin
+        xyz="0.000631161355953691 0.198872280810229 0.0873987406896937"
+        rpy="0 0 0" />
+      <mass
+        value="1.35700200010975" />
+      <inertia
+        ixx="0.018634872344161"
+        ixy="-4.77868890209311E-05"
+        ixz="7.15309895805838E-06"
+        iyy="0.019396702045632"
+        iyz="9.99491939890978E-07"
+        izz="0.0366527677642495" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RM_R_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RM_R_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RM_R_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.11462 0 0"
+      rpy="3.1321 -1.5708 0" />
+    <parent
+      link="RM_XIAOTUI_LINK" />
+    <child
+      link="RM_R_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RM_P_LINK">
+    <inertial>
+      <origin
+        xyz="0.000631161355953735 0.0873987406896938 -0.198872280810229"
+        rpy="0 0 0" />
+      <mass
+        value="1.35700200010975" />
+      <inertia
+        ixx="0.018634872344161"
+        ixy="7.1530989580456E-06"
+        ixz="4.77868890209296E-05"
+        iyy="0.0366527677642495"
+        iyz="-9.99491939884855E-07"
+        izz="0.019396702045632" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RM_P_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RM_P_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RM_P_JOINT"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="RM_R_LINK" />
+    <child
+      link="RM_P_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RM_Y_LINK">
+    <inertial>
+      <origin
+        xyz="0.198872280810229 0.0873987406896938 0.000631161355953702"
+        rpy="0 0 0" />
+      <mass
+        value="1.35700200010975" />
+      <inertia
+        ixx="0.019396702045632"
+        ixy="9.99491939883017E-07"
+        ixz="-4.77868890209311E-05"
+        iyy="0.0366527677642495"
+        iyz="7.1530989580586E-06"
+        izz="0.018634872344161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RM_Y_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RM_Y_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RM_Y_JOINT"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 1.5708 0" />
+    <parent
+      link="RM_P_LINK" />
+    <child
+      link="RM_Y_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RF_DATUI_LINK">
+    <inertial>
+      <origin
+        xyz="0.0255249899970156 0.000763425817223849 0.000986100417572638"
+        rpy="0 0 0" />
+      <mass
+        value="0.0217926611989283" />
+      <inertia
+        ixx="6.59142495049527E-06"
+        ixy="-6.61071268163021E-07"
+        ixz="6.61072459574595E-07"
+        iyy="5.12390522073549E-06"
+        iyz="-5.58336940097125E-13"
+        izz="5.12738472145829E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RF_DATUI_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RF_DATUI_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RF_DATUI_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.11037 -0.058365 0.0091"
+      rpy="0 0 -0.7854" />
+    <parent
+      link="base_link" />
+    <child
+      link="RF_DATUI_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RF_XI_LINK">
+    <inertial>
+      <origin
+        xyz="0.0195079618942139 -0.00386391652754378 -0.00172748662346331"
+        rpy="0 0 0" />
+      <mass
+        value="0.0522182293162191" />
+      <inertia
+        ixx="1.06499982418708E-05"
+        ixy="1.10358494836334E-06"
+        ixz="-6.71225057807662E-07"
+        iyy="1.62947340584512E-05"
+        iyz="-1.70949741532867E-07"
+        izz="1.11616096936087E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RF_XI_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RF_XI_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RF_XI_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.051 -0.0001 0"
+      rpy="-1.5708 -0.4479 0" />
+    <parent
+      link="RF_DATUI_LINK" />
+    <child
+      link="RF_XI_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RF_XIAOTUI_LINK">
+    <inertial>
+      <origin
+        xyz="0.0289753122034033 -0.0111829923893768 -0.00192095339841086"
+        rpy="0 0 0" />
+      <mass
+        value="0.0620612948573944" />
+      <inertia
+        ixx="1.23823906917626E-05"
+        ixy="9.54958966354603E-07"
+        ixz="3.87138637521864E-08"
+        iyy="1.69766635539358E-05"
+        iyz="-4.48742032954956E-08"
+        izz="1.63610022361652E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RF_XIAOTUI_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RF_XIAOTUI_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RF_XIAOTUI_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.064612 0 0.000127"
+      rpy="0 0 2.0281" />
+    <parent
+      link="RF_XI_LINK" />
+    <child
+      link="RF_XIAOTUI_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RF_R_LINK">
+    <inertial>
+      <origin
+        xyz="-0.186203431818843 0.134840216541366 0.0873987406896941"
+        rpy="0 0 0" />
+      <mass
+        value="1.35700200010975" />
+      <inertia
+        ixx="0.018634872344161"
+        ixy="-4.77868890209313E-05"
+        ixz="7.15309895805759E-06"
+        iyy="0.019396702045632"
+        iyz="9.9949193989043E-07"
+        izz="0.0366527677642495" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RF_R_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RF_R_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RF_R_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.11462 0 0"
+      rpy="1.5708 -0.7854 -1.5802" />
+    <parent
+      link="RF_XIAOTUI_LINK" />
+    <child
+      link="RF_R_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RF_P_LINK">
+    <inertial>
+      <origin
+        xyz="-0.186203431818843 0.0873987406896941 -0.134840216541366"
+        rpy="0 0 0" />
+      <mass
+        value="1.35700200010975" />
+      <inertia
+        ixx="0.018634872344161"
+        ixy="7.15309895804584E-06"
+        ixz="4.77868890209302E-05"
+        iyy="0.0366527677642495"
+        iyz="-9.99491939885019E-07"
+        izz="0.019396702045632" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RF_P_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RF_P_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RF_P_JOINT"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="RF_R_LINK" />
+    <child
+      link="RF_P_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RF_Y_LINK">
+    <inertial>
+      <origin
+        xyz="0.134840216541363 0.087398740689693 -0.186203431818844"
+        rpy="0 0 0" />
+      <mass
+        value="1.35700200010975" />
+      <inertia
+        ixx="0.019396702045632"
+        ixy="9.99491939882881E-07"
+        ixz="-4.77868890209303E-05"
+        iyy="0.0366527677642495"
+        iyz="7.15309895805858E-06"
+        izz="0.018634872344161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RF_Y_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/RF_Y_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RF_Y_JOINT"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 1.5708 0" />
+    <parent
+      link="RF_P_LINK" />
+    <child
+      link="RF_Y_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LF_DATUI_LINK">
+    <inertial>
+      <origin
+        xyz="0.0255249899968422 0.000763425816777151 0.000986100417396477"
+        rpy="0 0 0" />
+      <mass
+        value="0.0217926611984533" />
+      <inertia
+        ixx="6.59142495049404E-06"
+        ixy="-6.61071268162917E-07"
+        ixz="6.61072459574505E-07"
+        iyy="5.12390522073495E-06"
+        iyz="-5.58337494172723E-13"
+        izz="5.12738472145757E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LF_DATUI_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LF_DATUI_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LF_DATUI_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.11037 0.058365 0.0091"
+      rpy="0 0 0.7854" />
+    <parent
+      link="base_link" />
+    <child
+      link="LF_DATUI_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LF_XI_LINK">
+    <inertial>
+      <origin
+        xyz="0.0195079618947732 -0.00386391652748606 -0.00172748662309148"
+        rpy="0 0 0" />
+      <mass
+        value="0.052218229316873" />
+      <inertia
+        ixx="1.06499982418723E-05"
+        ixy="1.10358494836357E-06"
+        ixz="-6.71225057808056E-07"
+        iyy="1.62947340584525E-05"
+        iyz="-1.70949741532194E-07"
+        izz="1.11616096936092E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LF_XI_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LF_XI_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LF_XI_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.051 -0.0001 0"
+      rpy="-1.5708 -0.4479 0" />
+    <parent
+      link="LF_DATUI_LINK" />
+    <child
+      link="LF_XI_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LF_XIAOTUI_LINK">
+    <inertial>
+      <origin
+        xyz="0.0289753122034033 -0.0111829923893765 -0.00179395339841074"
+        rpy="0 0 0" />
+      <mass
+        value="0.0620612948573943" />
+      <inertia
+        ixx="1.23823906917626E-05"
+        ixy="9.54958966354606E-07"
+        ixz="3.87138637521922E-08"
+        iyy="1.69766635539357E-05"
+        iyz="-4.48742032955016E-08"
+        izz="1.63610022361651E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LF_XIAOTUI_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LF_XIAOTUI_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LF_XIAOTUI_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.064612 0 0"
+      rpy="0 0 2.0281" />
+    <parent
+      link="LF_XI_LINK" />
+    <child
+      link="LF_XIAOTUI_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LF_R_LINK">
+    <inertial>
+      <origin
+        xyz="-0.186165248052657 -0.134844786042041 0.0873987406896926"
+        rpy="0 0 0" />
+      <mass
+        value="1.35700200010975" />
+      <inertia
+        ixx="0.018634872344161"
+        ixy="-4.77868890209309E-05"
+        ixz="7.15309895805827E-06"
+        iyy="0.019396702045632"
+        iyz="9.99491939890978E-07"
+        izz="0.0366527677642495" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LF_R_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LF_R_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LF_R_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.11462 0 0.000127"
+      rpy="1.5708 0.7854 -1.5802" />
+    <parent
+      link="LF_XIAOTUI_LINK" />
+    <child
+      link="LF_R_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LF_P_LINK">
+    <inertial>
+      <origin
+        xyz="-0.186165248052657 0.0873987406896924 0.134844786042041"
+        rpy="0 0 0" />
+      <mass
+        value="1.35700200010975" />
+      <inertia
+        ixx="0.018634872344161"
+        ixy="7.15309895804559E-06"
+        ixz="4.77868890209305E-05"
+        iyy="0.0366527677642495"
+        iyz="-9.99491939884854E-07"
+        izz="0.019396702045632" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LF_P_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LF_P_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LF_P_JOINT"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="LF_R_LINK" />
+    <child
+      link="LF_P_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LF_Y_LINK">
+    <inertial>
+      <origin
+        xyz="-0.134844786042041 0.0873987406896925 -0.186165248052657"
+        rpy="0 0 0" />
+      <mass
+        value="1.35700200010975" />
+      <inertia
+        ixx="0.019396702045632"
+        ixy="9.99491939883017E-07"
+        ixz="-4.77868890209305E-05"
+        iyy="0.0366527677642495"
+        iyz="7.15309895805876E-06"
+        izz="0.018634872344161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LF_Y_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LF_Y_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LF_Y_JOINT"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 1.5708 0" />
+    <parent
+      link="LF_P_LINK" />
+    <child
+      link="LF_Y_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LM_DATUI_LINK">
+    <inertial>
+      <origin
+        xyz="0.0255249916730214 0.000763424761748371 0.00098610047927631"
+        rpy="0 0 0" />
+      <mass
+        value="0.021792663307571" />
+      <inertia
+        ixx="6.59142493016508E-06"
+        ixy="-6.61071273394349E-07"
+        ixz="6.61072453568924E-07"
+        iyy="5.12390522201196E-06"
+        iyz="-5.53037152670299E-13"
+        izz="5.1273846982054E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LM_DATUI_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LM_DATUI_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LM_DATUI_JOINT"
+    type="revolute">
+    <origin
+      xyz="0 0.0907 0.0091"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="LM_DATUI_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LM_XI_LINK">
+    <inertial>
+      <origin
+        xyz="0.0195079633298751 -0.00386391587940103 -0.00172748486360853"
+        rpy="0 0 0" />
+      <mass
+        value="0.0522182251911247" />
+      <inertia
+        ixx="1.06499978375078E-05"
+        ixy="1.10358460698087E-06"
+        ixz="-6.71224758181585E-07"
+        iyy="1.62947328581888E-05"
+        iyz="-1.70947759997202E-07"
+        izz="1.11616086966235E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LM_XI_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LM_XI_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LM_XI_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.051 -0.0001 0"
+      rpy="-1.5708 -0.4479 0" />
+    <parent
+      link="LM_DATUI_LINK" />
+    <child
+      link="LM_XI_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LM_XIAOTUI_LINK">
+    <inertial>
+      <origin
+        xyz="0.0289753091271252 -0.0111829928382983 -0.00192095355098056"
+        rpy="0 0 0" />
+      <mass
+        value="0.0620612828221142" />
+      <inertia
+        ixx="1.23823899391946E-05"
+        ixy="9.5495833616896E-07"
+        ixz="3.87140428789583E-08"
+        iyy="1.697666312823E-05"
+        iyz="-4.48744848665151E-08"
+        izz="1.63610010795271E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LM_XIAOTUI_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LM_XIAOTUI_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LM_XIAOTUI_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.064612 0 0.000127"
+      rpy="0 0 2.0281" />
+    <parent
+      link="LM_XI_LINK" />
+    <child
+      link="LM_XIAOTUI_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LM_R_LINK">
+    <inertial>
+      <origin
+        xyz="0.000685161355952818 -0.198838666544721 0.087398740689695"
+        rpy="0 0 0" />
+      <mass
+        value="1.35700200010975" />
+      <inertia
+        ixx="0.018634872344161"
+        ixy="-4.77868890209305E-05"
+        ixz="7.15309895805767E-06"
+        iyy="0.019396702045632"
+        iyz="9.99491939890432E-07"
+        izz="0.0366527677642495" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LM_R_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LM_R_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LM_R_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.11462 0 0"
+      rpy="3.1321 1.5708 0" />
+    <parent
+      link="LM_XIAOTUI_LINK" />
+    <child
+      link="LM_R_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LM_P_LINK">
+    <inertial>
+      <origin
+        xyz="0.000685161355952663 0.0873987406896949 0.198838666544721"
+        rpy="0 0 0" />
+      <mass
+        value="1.35700200010975" />
+      <inertia
+        ixx="0.018634872344161"
+        ixy="7.15309895804642E-06"
+        ixz="4.77868890209309E-05"
+        iyy="0.0366527677642495"
+        iyz="-9.99491939885374E-07"
+        izz="0.019396702045632" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LM_P_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LM_P_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LM_P_JOINT"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="LM_R_LINK" />
+    <child
+      link="LM_P_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LM_Y_LINK">
+    <inertial>
+      <origin
+        xyz="-0.198838666544721 0.0873987406896949 0.000685161355952863"
+        rpy="0 0 0" />
+      <mass
+        value="1.35700200010975" />
+      <inertia
+        ixx="0.019396702045632"
+        ixy="9.99491939883372E-07"
+        ixz="-4.77868890209307E-05"
+        iyy="0.0366527677642495"
+        iyz="7.15309895805933E-06"
+        izz="0.018634872344161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LM_Y_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LM_Y_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LM_Y_JOINT"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 1.5708 0" />
+    <parent
+      link="LM_P_LINK" />
+    <child
+      link="LM_Y_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LB_DATUI_LINK">
+    <inertial>
+      <origin
+        xyz="0.0255249899970155 0.000763425817223856 0.000986100417572626"
+        rpy="0 0 0" />
+      <mass
+        value="0.0217926611989284" />
+      <inertia
+        ixx="6.59142495049528E-06"
+        ixy="-6.61071268163025E-07"
+        ixz="6.61072459574594E-07"
+        iyy="5.12390522073551E-06"
+        iyz="-5.58336941162868E-13"
+        izz="5.1273847214583E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LB_DATUI_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LB_DATUI_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LB_DATUI_JOINT"
+    type="revolute">
+    <origin
+      xyz="-0.11037 0.058365 0.0091"
+      rpy="0 0 2.3562" />
+    <parent
+      link="base_link" />
+    <child
+      link="LB_DATUI_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LB_XI_LINK">
+    <inertial>
+      <origin
+        xyz="0.0195079618942138 -0.00386391652754381 -0.00172748662346343"
+        rpy="0 0 0" />
+      <mass
+        value="0.0522182293162191" />
+      <inertia
+        ixx="1.06499982418708E-05"
+        ixy="1.10358494836334E-06"
+        ixz="-6.71225057807675E-07"
+        iyy="1.62947340584512E-05"
+        iyz="-1.70949741532866E-07"
+        izz="1.11616096936087E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LB_XI_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LB_XI_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LB_XI_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.051 -0.0001 0"
+      rpy="-1.5708 -0.4479 0" />
+    <parent
+      link="LB_DATUI_LINK" />
+    <child
+      link="LB_XI_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LB_XIAOTUI_LINK">
+    <inertial>
+      <origin
+        xyz="0.0289753122034018 -0.011182992389376 -0.00179395339841006"
+        rpy="0 0 0" />
+      <mass
+        value="0.0620612948573944" />
+      <inertia
+        ixx="1.23823906917626E-05"
+        ixy="9.54958966354613E-07"
+        ixz="3.87138637521824E-08"
+        iyy="1.69766635539358E-05"
+        iyz="-4.48742032954876E-08"
+        izz="1.63610022361652E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LB_XIAOTUI_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LB_XIAOTUI_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LB_XIAOTUI_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.064612 0 0"
+      rpy="0 0 2.0281" />
+    <parent
+      link="LB_XI_LINK" />
+    <child
+      link="LB_XIAOTUI_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LB_R_LINK">
+    <inertial>
+      <origin
+        xyz="0.187519754530751 -0.134806602275861 0.0873987406896959"
+        rpy="0 0 0" />
+      <mass
+        value="1.35700200010975" />
+      <inertia
+        ixx="0.018634872344161"
+        ixy="-4.77868890209316E-05"
+        ixz="7.15309895805762E-06"
+        iyy="0.019396702045632"
+        iyz="9.99491939890458E-07"
+        izz="0.0366527677642495" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LB_R_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LB_R_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LB_R_JOINT"
+    type="revolute">
+    <origin
+      xyz="0.11462 0 0.000127"
+      rpy="-1.5708 0.7854 1.5613" />
+    <parent
+      link="LB_XIAOTUI_LINK" />
+    <child
+      link="LB_R_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LB_P_LINK">
+    <inertial>
+      <origin
+        xyz="0.187519754530751 0.0873987406896961 0.134806602275861"
+        rpy="0 0 0" />
+      <mass
+        value="1.35700200010975" />
+      <inertia
+        ixx="0.018634872344161"
+        ixy="7.15309895804588E-06"
+        ixz="4.77868890209302E-05"
+        iyy="0.0366527677642495"
+        iyz="-9.99491939884965E-07"
+        izz="0.019396702045632" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LB_P_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LB_P_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LB_P_JOINT"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="LB_R_LINK" />
+    <child
+      link="LB_P_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="LB_Y_LINK">
+    <inertial>
+      <origin
+        xyz="-0.134806602275861 0.0873987406896959 0.187519754530751"
+        rpy="0 0 0" />
+      <mass
+        value="1.35700200010975" />
+      <inertia
+        ixx="0.019396702045632"
+        ixy="9.99491939882992E-07"
+        ixz="-4.7786889020932E-05"
+        iyy="0.0366527677642495"
+        iyz="7.15309895805862E-06"
+        izz="0.018634872344161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LB_Y_LINK.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://LIUZU/meshes/LB_Y_LINK.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LB_Y_JOINT"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 1.5708 0" />
+    <parent
+      link="LB_P_LINK" />
+    <child
+      link="LB_Y_LINK" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
