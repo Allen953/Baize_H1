@@ -24,6 +24,6 @@ Nanopi k2安装ubuntu16.04和ros kinetic。
 
 按照如下图进行舵机连线
 
-![舵机接线图](https://github.com/Allen953/Baize_HexapodRobot_ROS/commit/1ecb608f0c5ea4e534e1632581796b394cbf035f)
+![舵机接线图](https://github.com/Allen953/Baize_HexapodRobot_ROS/blob/main/7.Photos%20%26%20Videos/%E5%85%B3%E8%8A%82%E7%BC%96%E5%8F%B7.png)
 
 
